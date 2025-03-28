@@ -1,0 +1,70 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #b9d5ff;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+.faq-container {
+    background: url(bg.jpg);
+    max-width: 500px;
+    margin: auto;
+    /*background: white;*/
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+h1 {
+    color: #004fa9;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+}
+.chatbox {
+    border: 1px solid #000000;
+    padding: 15px;
+    border-radius: 8px;
+    background: #fff;
+    max-height: 500px;
+    overflow-y: auto;
+}
+#chat-history {
+    text-align: left;
+    min-height: 150px;
+}
+.message {
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    max-width: 80%;
+}
+.user-message {
+    background: #1a73e8;
+    color: white;
+    text-align: right;
+    float: right;
+}
+.bot-message {
+    background: #f1f1f1;
+    color: #333;
+    text-align: left;
+    float: left;
+}
+.question-buttons {
+    margin-top: 30px;
+}
+.question {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #1a73e8;
+    border-radius: 5px;
+    background: #1a73e8;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+.question:hover {
+    background: #0d62d1;
+    border: 2px solid black;
+}

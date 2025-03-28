@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Quiz | MediConnect</title>
+    <link rel="stylesheet" href="10_quiz.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Health Quiz</h1>
+        <p>Test your general health awareness!</p>
+        <form id="quizForm">
+            <div class="quiz-item">
+                <p>1. What is the normal body temperature in Fahrenheit?</p>
+                <label><input type="radio" name="q1" value="a"> 97.0°F</label>
+                <label><input type="radio" name="q1" value="b"> 98.6°F</label>
+                <label><input type="radio" name="q1" value="c"> 100.2°F</label>
+            </div>
+            <div class="quiz-item">
+                <p>2. What vitamin is produced when the skin is exposed to sunlight?</p>
+                <label><input type="radio" name="q2" value="a"> Vitamin A</label>
+                <label><input type="radio" name="q2" value="b"> Vitamin D</label>
+                <label><input type="radio" name="q2" value="c"> Vitamin C</label>
+            </div>
+            <div class="quiz-item">
+                <p>3. Which organ purifies blood in the human body?</p>
+                <label><input type="radio" name="q3" value="a"> Liver</label>
+                <label><input type="radio" name="q3" value="b"> Kidney</label>
+                <label><input type="radio" name="q3" value="c"> Heart</label>
+            </div>
+            <div class="quiz-item">
+                <p>4. How much of the human body is made up of water?</p>
+                <label><input type="radio" name="q4" value="a"> 50-55%</label>
+                <label><input type="radio" name="q4" value="b"> 60-70%</label>
+                <label><input type="radio" name="q4" value="c"> 80-85%</label>
+            </div>
+            <div class="quiz-item">
+                <p>5. Which of the following is considered a "good" cholesterol?</p>
+                <label><input type="radio" name="q5" value="a"> LDL</label>
+                <label><input type="radio" name="q5" value="b"> HDL</label>
+                <label><input type="radio" name="q5" value="c"> VLDL</label>
+            </div>
+            <button type="button" onclick="submitQuiz()">Submit</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="10_quiz.js"></script>
+</body>
+</html>

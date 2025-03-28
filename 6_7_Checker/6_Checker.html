@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symptom Checker</title>
+    <link rel="stylesheet" href="6_Checker.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Symptom Checker</h1>
+            <p>Select 3 symptoms to get potential causes and recommendations</p>
+        </header>
+        <main>
+            <form id="symptomForm">
+                <div class="symptom-selection">
+                    <div class="dropdown-container">
+                        <label for="symptom1">Symptom 1:</label>
+                        <select id="symptom1" required>
+                            <option value="" disabled selected>Select a symptom</option>
+                        </select>
+                    </div>
+                    <div class="dropdown-container">
+                        <label for="symptom2">Symptom 2:</label>
+                        <select id="symptom2" required>
+                            <option value="" disabled selected>Select a symptom</option>
+                        </select>
+                    </div>
+                    <div class="dropdown-container">
+                        <label for="symptom3">Symptom 3:</label>
+                        <select id="symptom3" required>
+                            <option value="" disabled selected>Select a symptom</option>
+                        </select>
+                    </div>
+                </div>
+                <button type="submit" class="check-button">Check Symptoms</button>
+            </form>
+        </main>
+        <footer>
+            <p>Disclaimer: This tool is for informational purposes only and not a substitute for professional medical advice.</p>
+        </footer>
+    </div>
+    <script src="6_Checker.js"></script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    text-align: center;
+    background: url("bg.jpg");
+    background-size: cover;
+}
+header {
+    background-color: #2c4864;
+    color: white;
+    padding: 1px;
+    font-size: 1.2em;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+.disease-card {
+    background: white;
+    width: 300px;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.disease-card img {
+    width: 100%;
+    border-radius: 10px;
+    height: 180px;
+    object-fit: cover;
+}
+.disease-card h2 {
+    color: #0073e6;
+    margin: 10px 0;
+}
+.disease-card p {
+    font-size: 14px;
+    text-align: left;
+    margin: 5px 0;
+}
+.disease-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+#next{
+    position:absolute;
+    top:37px;
+    left: 1100px;
+    width:100px;
+    height:30px;
+    padding:2px;
+    font-size: 20px;
+    border-radius:10px;
+}

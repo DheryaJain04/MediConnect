@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Symptom Checker Results</title>
+    <link rel="stylesheet" href="6_Checker.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Symptom Analysis Results</h1>
+        </header>
+        <main>
+            <div class="results-container">
+                <div class="selected-symptoms">
+                    <h2>Your Selected Symptoms:</h2>
+                    <ul id="symptomsList"></ul>
+                </div>
+                <div class="potential-causes">
+                    <h2>Potential Causes:</h2>
+                    <div id="causes"></div>
+                </div>
+                <div class="recommendations">
+                    <h2>Recommendations:</h2>
+                    <div id="recommendations"></div>
+                </div>
+            </div>
+            <button id="backButton" class="back-button">Check Different Symptoms</button>
+        </main>
+        <footer>
+            <p>Disclaimer: This tool is for informational purposes only and not a substitute for professional medical advice.</p>
+        </footer>
+    </div>
+    <script src="7_Result.js"></script>
+</body>
+</html>

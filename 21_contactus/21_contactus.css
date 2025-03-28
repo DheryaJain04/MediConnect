@@ -1,0 +1,137 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.contact-hero {
+    background: #1a6fc9;
+    color: white;
+    padding: 25px 0;
+    text-align: center;
+}
+.contact-hero h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+.contact-hero p {
+    font-size: 16px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin: 30px auto;
+}
+
+.contact-info, .contact-form {
+    flex: 1;
+    min-width: 300px;
+    background: white;
+    border-radius: 8px;
+    padding: 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.contact-info h2, .contact-form h2 {
+    color: #1a6fc9;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+.info-item {
+    display: flex;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.info-icon {
+    color: #1a6fc9;
+    margin-right: 12px;
+    font-size: 16px;
+    width: 20px;
+    text-align: center;
+}
+
+.info-content {
+    flex: 1;
+}
+
+.info-content a {
+    color: #6c757d;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.info-content a:hover {
+    color: #1a6fc9;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    width:455px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea.form-control {
+    min-height: 140px;
+}
+
+.submit-btn {
+    background: #1a6fc9;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-btn:hover {
+    background: #0d4b8e;
+}
+
+.social-links {
+    background: #343a40;
+    padding: 25px 0;
+    text-align: center;
+}
+
+.social-links p {
+    color: white;
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icon {
+    color: white;
+    font-size: 20px;
+}
+
+.social-icon:hover {
+    color: #1a6fc9;
+}

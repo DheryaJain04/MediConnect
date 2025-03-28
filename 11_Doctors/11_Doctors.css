@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+header {
+    background: #0064ce;
+    color: white;
+    padding: 20px;
+    font-size: 24px;
+}
+.filters {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.filters select, .filters input {
+    width: 200px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+.doctor-card {
+    background: white;
+    width: 250px;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+.doctor-card:hover {
+    transform: scale(1.05);
+}
+h2 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+.headertext {
+    font-size: 20px;
+    color: #ffffff;
+}
+p {
+    font-size: 14px;
+    color: #333;
+}

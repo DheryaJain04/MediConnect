@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Listings - MediConnect</title>
+    <link rel="stylesheet" href="11_Doctors.css">
+    <script defer src="11_Doctors.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Find a Doctor</h1>
+        <p class="headertext"><b>Search and filter doctors by specialty, rating, and location.</b></p>
+    </header>
+    <div class="filters">
+        <input type="text" id="search" placeholder="Search by name...">
+        <select id="specialty-filter">
+            <option value="">All Specialties</option>
+            <option value="Cardiologist">Cardiologist</option>
+            <option value="Dermatologist">Dermatologist</option>
+            <option value="Neurologist">Neurologist</option>
+            <option value="Pediatrician">Pediatrician</option>
+        </select>
+        <select id="location-filter">
+            <option value="">All Locations</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Lucknow">Lucknow</option>
+        </select>
+        <select id="rating-filter">
+            <option value="">All Ratings</option>
+            <option value="4.5">4.5+</option>
+            <option value="4.0">4.0+</option>
+            <option value="3.5">3.5+</option>
+        </select>
+    </div>
+    <div class="container" id="doctor-list">
+        <!-- Doctor cards will be generated here dynamically -->
+    </div>
+</body>
+</html>

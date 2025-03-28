@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lung Cancer Predictor</title>
+    <link rel="stylesheet" href="24_lungcancer.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Lung Cancer Predictor</h1>
+        </div>
+        <div class="predictor-form">
+            <form id="lungCancerForm">
+                <div class="form-section">
+                    <h3>Personal Information</h3>
+                    <div class="form-row">
+                        <div class="form-col">
+                            <div class="form-group">
+                                <label for="age">Age</label>
+                                <input type="number" id="age" min="18" max="100" required>
+                            </div>
+                        </div>
+                        <div class="form-col">
+                            <div class="form-group">
+                                <label for="gender">Gender</label>
+                                <select id="gender" required>
+                                    <option value="">Select</option>
+                                    <option value="1">Male</option>
+                                    <option value="2">Female</option>
+                                    <option value="3">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-section">
+                    <h3>Environmental Factors</h3>
+                    <div class="form-row">
+                        <div class="form-col">
+                            <div class="form-group">
+                                <label for="air_pollution">Air Pollution Exposure</label>
+                                <select id="air_pollution" required>
+                                    <option value="">Select</option>
+                                    <option value="1">Low</option>
+                                    <option value="2">Medium</option>
+                                    <option value="3">High</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-col">
+                            <div class="form-group">
+                                <label for="dust_allergy">Dust Allergy</label>
+                                <select id="dust_allergy" required>
+                                    <option value="">Select</option>
+                                    <option value="1">None</option>
+                                    <option value="2">Mild</option>
+                                    <option value="3">Severe</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-col">
+                            <div class="form-group">
+                                <label for="occupational_hazards">Occupational Hazards</label>
+                                <select id="occupational_hazards" required>
+                                    <option value="">Select</option>
+                                    <option value="1">None</option>
+                                    <option value="2">Occasional</option>
+                                    <option value="3">Regular</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-section">
+                    <h3>Lifestyle Factors</h3>
+                    <div class="form-row">
+                        <div class="form-col">
+                            <div class="form-group">
+                                <label for="alcohol_use">Alcohol Use</label>
+                                <select id="alcohol_use" required>
+                                    <option value="">Select</option>
+                                    <option value="1">None</option>
+                                    <option value="2">Social</option>
+                                    <option value="3">Heavy</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-col">
+                            <div class="form-group">
+                                <label for="smoking">Smoking</label>
+                                <select id="smoking" required>
+                                    <option value="">Select</option>
+                                    <option value="1">Never</option>
+                                    <option value="2">Former</option>
+                                    <option value="3">Current</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-col">
+                            <div class="form-group">
+                                <label for="passive_smoker">Passive Smoker</label>
+                                <select id="passive_smoker" required>
+                                    <option value="">Select</option>
+                                    <option value="1">Never</option>
+                                    <option value="2">Occasional</option>
+                                    <option value="3">Regular</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-col">
+                            <div class="form-group">
+                                <label for="balanced_diet">Balanced Diet</label>
+                                <select id="balanced_diet" required>
+                                    <option value="">Select</option>
+                                    <option value="1">Poor</option>
+                                    <option value="2">Average</option>
+                                    <option value="3">Excellent</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-col">
+                            <div class="form-group">
+                                <label for="obesity">Obesity</label>
+                                <select id="obesity" required>
+                                    <option value="">Select</option>
+                                    <option value="1">Normal</option>
+                                    <option value="2">Overweight</option>
+                                    <option value="3">Obese</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-section">
+                    <h3>Medical History</h3>
+                    <div class="form-row">
+                        <div class="form-col">
+                            <div class="form-group">
+                                <label for="genetic_risk">Genetic Risk</label>
+                                <select id="genetic_risk" required>
+                                    <option value="">Select</option>
+                                    <option value="1">None</option>
+                                    <option value="2">Possible</option>
+                                    <option value="3">Strong</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-col">
+                            <div class="form-group">
+                                <label for="chronic_lung_disease">Chronic Lung Disease</label>
+                                <select id="chronic_lung_disease" required>
+                                    <option value="">Select</option>
+                                    <option value="1">None</option>
+                                    <option value="2">Mild</option>
+                                    <option value="3">Severe</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-section">
+                    <h3>Symptoms</h3>
+                    <div class="form-row">
+                        <div class="form-col">
+                            <div class="form-group">
+                                <label for="chest_pain">Chest Pain</label>
+                                <select id="chest_pain" required>
+                                    <option value="">Select</option>
+                                    <option value="1">None</option>
+                                    <option value="2">Occasional</option>
+                                    <option value="3">Frequent</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-col">
+                            <div class="form-group">
+                                <label for="coughing_blood">Coughing Blood</label>
+                                <select id="coughing_blood" required>
+                                    <option value="">Select</option>
+                                    <option value="1">None</option>
+                                    <option value="2">Rare</option>
+                                    <option value="3">Frequent</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-col">
+                            <div class="form-group">
+                                <label for="fatigue">Fatigue</label>
+                                <select id="fatigue" required>
+                                    <option value="">Select</option>
+                                    <option value="1">None</option>
+                                    <option value="2">Mild</option>
+                                    <option value="3">Severe</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-col">
+                            <div class="form-group">
+                                <label for="weight_loss">Weight Loss</label>
+                                <select id="weight_loss" required>
+                                    <option value="">Select</option>
+                                    <option value="1">None</option>
+                                    <option value="2">Mild</option>
+                                    <option value="3">Significant</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-col">
+                            <div class="form-group">
+                                <label for="shortness_breath">Shortness of Breath</label>
+                                <select id="shortness_breath" required>
+                                    <option value="">Select</option>
+                                    <option value="1">None</option>
+                                    <option value="2">With exertion</option>
+                                    <option value="3">At rest</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-col">
+                            <div class="form-group">
+                                <label for="wheezing">Wheezing</label>
+                                <select id="wheezing" required>
+                                    <option value="">Select</option>
+                                    <option value="1">None</option>
+                                    <option value="2">Occasional</option>
+                                    <option value="3">Frequent</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn">Predict Risk</button>
+            </form>
+            <div id="result" class="result">
+                <h3>Your Lung Cancer Risk Assessment</h3>
+                <div id="riskLevel" class="risk-level"></div>
+                <p id="riskDescription"></p>
+            </div>
+        </div>
+    </div>
+    <script src="24_lungcancer.js"></script>
+</body>
+</html>
